@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Factura</title>
+</head>
+<body>
+    <h1>Nueva Factura</h1>
+    <form>
+        Numero <input id="num_fac" type="text" required/> <br>
+        Comprobante_de_gasto <input id="cdg" type="text" required/><br>
+        Comprobante_de_compra <input id="cdc" type="text" required/><br>
+        Mozo asignado<input id="mAsig" type="text" required/><br>
+        Pedido <input id="ped" type="text" required/><br>
+        Mesa Servida <input id="mSer" type="text" required/><br>
+        <button style="padding: 1%;" onclick="nuevaFac()"> Agregar</button>
+    </form>
+
+    <h1>Actualizar Factura</h1>
+    <form>
+        Numero <input id="num_fac2" type="text" required/> <br>
+        Comprobante_de_gasto <input id="cdg2" type="text" required/><br>
+        Comprobante_de_compra <input id="cdc2" type="text" required/><br>
+        Mozo asignado<input id="mAsig2" type="text" required/><br>
+        Pedido <input id="ped2" type="text" required/><br>
+        Mesa Servida <input id="mSer2" type="text" required/><br>
+        <button style="padding: 1%;" onclick="actualizarFac()"> Actualizar</button>
+    </form>
+    <br>
+    <a href="../index.html"><button> Volver </button></a>
+    <script src="../fetch.js"></script>
+</body>
+</html>

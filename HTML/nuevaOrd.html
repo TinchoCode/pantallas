@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Orden</title>
+</head>
+<body>
+    <h1>Datos de la Orden</h1>
+    <form>
+        ID_Pedido<input id="id_ped" type="text" required/> <br>
+        Descripcion<input id="des" type="text" required/><br>
+        Unidades<input id="uni" type="text" required/><br>
+        Valor_cu<input id="valor" type="text" required/><br>
+        <button style="padding: 1%;" onclick="nuevaOrd()">Agregar</button>
+    </form>
+
+    <h1>Actualizar Orden</h1>
+    <form>
+        ID_Pedido<input id="id_ped2" type="text" required/> <br>
+        Descripcion<input id="des2" type="text" required/><br>
+        Unidades<input id="uni2" type="text" required/><br>
+        Valor_cu<input id="valor2" type="text" required/><br>
+        <button style="padding: 1%;" onclick="actualizarItems()">Actualizar</button>
+    </form>
+    <a href="../index.html"><button style="padding: 1%;"> Volver </button></a>
+
+    <script src="../fetch.js"></script>
+    
+</body>
+</html>
