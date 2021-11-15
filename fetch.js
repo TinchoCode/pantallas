@@ -1,3 +1,11 @@
+//REVISAR COSAS
+function verFac(){    
+    fetch('https://trabajo-final-3.herokuapp.com/items')
+.then(res => {return res.json()})
+.then(data => console.log(data))
+}
+
+
 //AGREGAR COSAS
 function nuevaOrd(){
     a = document.getElementById("id_ped").value;
@@ -5,7 +13,7 @@ function nuevaOrd(){
     c = document.getElementById("uni").value;
     d = document.getElementById("valor").value;
 
-    fetch('http://localhost:3000/nuevaOrd', {
+    fetch('https://trabajo-final-3.herokuapp.com/nuevaOrd', {
     method: 'POST',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -29,7 +37,7 @@ function nuevoMozo(){
     g = document.getElementById("reem").value;
     h = document.getElementById("dom").value;
 
-    fetch('http://localhost:3000/nuevoMozo', {
+    fetch('https://trabajo-final-3.herokuapp.com/nuevoMozo', {
     method: 'POST',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -54,7 +62,7 @@ function nuevoDom(){
     c = document.getElementById("num_dom").value;
     d = document.getElementById("ciudad").value;
 
-    fetch('http://localhost:3000/nuevoDom', {
+    fetch('https://trabajo-final-3.herokuapp.com/nuevoDom', {
     method: 'POST',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -77,7 +85,7 @@ function nuevaFac(){
     e = document.getElementById("ped").value;
     f = document.getElementById("mSer").value;
 
-    fetch('http://localhost:3000/nuevaFac', {
+    fetch('https://trabajo-final-3.herokuapp.com/nuevaFac', {
     method: 'POST',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -100,7 +108,7 @@ function nuevaMesa(){
     c = document.getElementById("color").value;
     d = document.getElementById("cds").value;
 
-    fetch('http://localhost:3000/nuevaMesa', {
+    fetch('https://trabajo-final-3.herokuapp.com/nuevaMesa', {
     method: 'POST',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -123,7 +131,7 @@ function actualizarMesa(){
     d2 = document.getElementById("cds2").value;
     
 
-    fetch('http://localhost:3000/ActualizarMesa', {
+    fetch('https://trabajo-final-3.herokuapp.com/ActualizarMesa', {
     method: 'PUT',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -144,7 +152,7 @@ function actualizarItems(){
     d2 = document.getElementById("valor2").value;
     
 
-    fetch('http://localhost:3000/ActualizarItems', {
+    fetch('https://trabajo-final-3.herokuapp.com/ActualizarItems', {
     method: 'PUT',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -165,7 +173,7 @@ function actualizarDom(){
     d2 = document.getElementById("ciudad2").value;
     
 
-    fetch('http://localhost:3000/ActualizarDom', {
+    fetch('https://trabajo-final-3.herokuapp.com/ActualizarDom', {
     method: 'PUT',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -189,7 +197,7 @@ function actualizarMozo(){
     g = document.getElementById("reem2").value;
     h = document.getElementById("dom2").value;
 
-    fetch('http://localhost:3000/ActualizarMozo', {
+    fetch('https://trabajo-final-3.herokuapp.com/ActualizarMozo', {
     method: 'PUT',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -215,7 +223,7 @@ function actualizarFac(){
     e = document.getElementById("ped2").value;
     f = document.getElementById("mSer2").value;
 
-    fetch('http://localhost:3000/ActualizarFac', {
+    fetch('https://trabajo-final-3.herokuapp.com/ActualizarFac', {
     method: 'PUT',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -236,7 +244,7 @@ function actualizarFac(){
 function eliminarPed(){
     a2 = document.getElementById("id_ped3").value;
     
-    fetch('http://localhost:3000/EliminarPed', {
+    fetch('https://trabajo-final-3.herokuapp.com/EliminarPed', {
     method: 'DELETE',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -250,7 +258,7 @@ function eliminarPed(){
 function eliminarMesa(){
     a2 = document.getElementById("num_mesa3").value;
     
-    fetch('http://localhost:3000/EliminarMesa', {
+    fetch('https://trabajo-final-3.herokuapp.com/EliminarMesa', {
     method: 'DELETE',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -264,7 +272,7 @@ function eliminarMesa(){
 function eliminarDom(){
     a2 = document.getElementById("id_dom3").value;
     
-    fetch('http://localhost:3000/EliminarDom', {
+    fetch('https://trabajo-final-3.herokuapp.com/EliminarDom', {
     method: 'DELETE',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -278,7 +286,7 @@ function eliminarDom(){
 function eliminarFac(){
     a2 = document.getElementById("num_fac3").value;
     
-    fetch('http://localhost:3000/EliminarFac', {
+    fetch('https://trabajo-final-3.herokuapp.com/EliminarFac', {
     method: 'DELETE',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({
@@ -292,7 +300,7 @@ function eliminarFac(){
 function eliminarMozo(){
     a2 = document.getElementById("dni3").value;
     
-    fetch('http://localhost:3000/EliminarMozo', {
+    fetch('https://trabajo-final-3.herokuapp.com/EliminarMozo', {
     method: 'DELETE',
     headers: {'Content-type': 'application/json'},
     body: JSON.stringify({

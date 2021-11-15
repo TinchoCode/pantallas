@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 
 const mysqlConecction = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'password',
-    database:'restaurante'
+    host:'bwaladshhcgrncn2ov2w-mysql.services.clever-cloud.com',
+    user:'uhsq8l0qijefuemt',
+    password:'GOEkJyNmXTwctCQ6gc3p',
+    database:'bwaladshhcgrncn2ov2w'
 });
 
 mysqlConecction.connect(function (err) {
@@ -17,3 +17,4 @@ mysqlConecction.connect(function (err) {
 });
 
 module.exports = mysqlConecction;
+

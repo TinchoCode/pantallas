@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 const morgan = require('morgan');
-
+const port = process.env.PORT || 3000;
 //Configuraciones
-app.set('port', process.env.PORT || 3000);
+//app.set('port', process.env.PORT || 3000);
 app.set('json spaces', 2);
 
 //Funciones de espera 
@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(require('./routes/employees'));
 
 //Inicio del server
-app.listen(3000, () => {
-    console.log('Server on Port 3000', app.get('port'));
+app.listen(port, () => {
+    console.log('Server on');
 
 });
