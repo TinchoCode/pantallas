@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos Personales</title>
+</head>
+<body>
+    <h1>Segundo Paso: Añadir Datos Personales</h1>
+    <form>
+        DNI <input id="dni" type="text" required/> <br>
+        Nombre <input id="nom" type="text" required/><br>
+        Apellido <input id="ape" type="text" required/><br>
+        Edad<input id="edad" type="text" required/><br>
+        tiempo_en_mesa <input id="tem" type="text" required/><br>
+        salud <input id="salud" type="text" required/><br>
+        reemplazo <input id="reem" type="text"/><br>
+        domicilio <input id="dom" type="text" required/><br>
+        <button type='button'style="padding: 1%;" onclick="nuevoMozo()"> Agregar</button>
+    </form>
+
+    <h1>Actualizar Datos Personales</h1>
+    <form>
+        DNI <input id="dni2" type="text" required/> <br>
+        Nombre <input id="nom2" type="text" required/><br>
+        Apellido <input id="ape2" type="text" required/><br>
+        Edad<input id="edad2" type="text" required/><br>
+        tiempo_en_mesa <input id="tem2" type="text" required/><br>
+        salud <input id="salud2" type="text" required/><br>
+        reemplazo <input id="reem2" type="text"/><br>
+        domicilio <input id="dom2" type="text" required/><br>
+        <button type='button'style="padding: 1%;" onclick="actualizarMozo()"> Actualizar</button>
+    </form>
+    <a href="../index.html"><button style="padding: 1%;"> Terminar Registro</button></a>
+    <script src="../fetch.js"></script>
+</body>
+</html>

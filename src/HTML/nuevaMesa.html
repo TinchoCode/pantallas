@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nueva Mesa</title>
+</head>
+<body>
+    <h1>Datos de la Mesa</h1>
+    <form>
+        Numero<input id="num_mesa" type="text" required/> <br>
+        Material<input id="mat" type="text" required/><br>
+        Color<input id="color" type="text" required/><br>
+        Cantidad de Sillas<input id="cds" type="text" required/><br>
+        <button type='button'style="padding: 1%;" onclick="nuevaMesa()">Agregar</button>
+    </form>
+    
+    <h1> Datos nuevos </h1>
+    <form>
+        Numero<input id="num_mesa2" type="text" required/> <br>
+        Material<input id="mat2" type="text" required/><br>
+        Color<input id="color2" type="text" required/><br>
+        Cantidad de Sillas<input id="cds2" type="text" required/><br>
+        <button type='button'style="padding: 1%;" onclick="actualizarMesa()">Actualizar</button>
+    </form>
+    <a href="../index.html"><button style="padding: 1%;"> Volver</button></a>
+
+    <script src="../fetch.js"></script>
+</body>
+</html>

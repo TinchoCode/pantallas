@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Datos Domicilio</title>
+</head>
+<body>
+    <h1>Primero Paso: Añadir su Domicilio</h1>
+    <form>
+        ID_Domicilio<input id="id_dom" type="text" required/> <br>
+        Calle<input id="calle" type="text" required/><br>
+        Numero<input id="num_dom" type="text" required/><br>
+        Ciudad<input id="ciudad" type="text" required/><br>
+        <button type='button'style="padding: 1%;" onclick="nuevoDom()">Agregar</button>
+    </form>
+
+    <h1>Actualizar su Domicilio</h1>
+    <form>
+        ID_Domicilio<input id="id_dom2" type="text" required/> <br>
+        Calle<input id="calle2" type="text" required/><br>
+        Numero<input id="num_dom2" type="text" required/><br>
+        Ciudad<input id="ciudad2" type="text" required/><br>
+        <button type='button'style="padding: 1%;" onclick="actualizarDom()">Actualizar</button>
+    </form>
+    <a href="nuevoMozo.html"><button style="padding: 1%;"> Siguiente</button></a>
+
+<script src="../fetch.js"></script>
+    
+</body>
+</html>
