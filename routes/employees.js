@@ -3,10 +3,16 @@ const router = express.Router();
 
 const mysqlConecction = require('../database');
 
-//OTRO TUTO
-router.get('/', (req, res)=>{
-    res.json({'Title':'Pagina Princiapal'});
-});
+//OTRO TUTO 
+
+router.get('/hacker', (req, res)=>{
+    res.send('punto');
+})
+/*router.get('/', (req, res) => {
+    // console.log(__dirname)
+    //res.render("index", {titulo : "mi titulo dinámico"})
+    res.render("index", {titulo : "mi titulo dinámico"})
+});*/
 
 // VER LAS COSAS
 //DOMICILIOS
